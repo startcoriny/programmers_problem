@@ -1,15 +1,6 @@
 function solution(angle) {
 
-  let result;
-  if (angle === 180) {
-    result = 4;
-  } else if (angle === 90) {
-    result = 2
-  }else if (angle < 90) {
-    result = 1;
-  } else if (angle < 180) {
-    result = 3;
-  }
 
-  return result;
+  return angle < 90 ? 1 : angle === 90? 2 : angle < 180? 3: 4 ;
+
 }
