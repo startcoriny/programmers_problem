@@ -1,10 +1,6 @@
 function solution(n, k) {
-  let totY = 12000*n
-  let totJ = 0;
-  if(n >= 10){
-    totJ = (k - Math.floor(n/10))*2000
-  }else{
-    totJ = k * 2000
-  }
+  let totY = 12000*n //1500000
+  let totJ = n >= 10 ? (k - Math.floor(n/10))*2000:k * 2000;
+
   return totY+totJ
 }
