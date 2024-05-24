@@ -46,7 +46,6 @@ function solution(a, b, c, d) {
         qcount++;
       }
     });
-    console.log(pcount)
     if (pcount > 1) {
       score = q * r;
     } else if (qcount > 1) {
