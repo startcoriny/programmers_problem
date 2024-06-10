@@ -1,6 +1,5 @@
 function solution(myStr) {
-    let regexp = /[a|b|c]/g
-    let arr = myStr.replaceAll(regexp, " ")
-    let result = arr.split(" ").filter(str=>str !== "")
-    return result.length === 0? ["EMPTY"]: result
+    let regexp = /[^a-c]+/g
+    // let arr = myStr.replaceAll(regexp, " ")
+    return myStr.match(regexp)||["EMPTY"]
 }
