@@ -12,6 +12,3 @@ function solution(date1, date2) {
         return 0
     }
 }
-
-date1 = [2022, 1, 1]
-date2 = [2021, 12, 31 ]
